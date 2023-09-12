@@ -2,7 +2,7 @@
 
 /**
  * _abs - Computes the abolute value of an integer.
- * @c: The parameter to be checked.
+ * @w: The parameter to be checked.
  * Return: Absolute value of number or zero
  */
 
