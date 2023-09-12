@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - in values below 1024, functions to add multiples of three or five
+ * main - in values below 1024, functions to add multiples of three or five
  * Return: 0
  */
 
