@@ -1,25 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - program to find first 50 fibobacci number.
+ * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
+ * followed by a new line
  * Return: Always 0
  */
-
 int main(void)
 {
-	int w = 1;
-	int q = 2;
-	int n;
-	int i;
+	long int i, w, q, next;
 
-	printf("%d, ", w);
-	for (i = 1; i < 50; i++)
+	w = 1;
+
+	q = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		printf("%d", q);
-		n = w + q;
+		if (w != 20365011074)
+		{
+			printf("%ld, ", w);
+		} else
+		{
+			printf("%ld\n", w);
+		}
+		next = w + q;
 		w = q;
-		q = n;
+		q = next;
 	}
-	printf("\n");
+
 	return (0);
 }
