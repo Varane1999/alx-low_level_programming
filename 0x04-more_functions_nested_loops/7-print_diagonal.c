@@ -4,22 +4,24 @@
  * print_diagonal - creates a diagonal line on the terminal
  * @n: number of times to print the character \
  */
+
 void print_diagonal(int n)
+
 {
 	if (n <= 0)
 	{
 		_putchar('\n');
 	} else
 	{
-		int i, w;
+		int i, j;
 
 		for (i = 0; i < n; i++)
 	{
-			for (w = 0; w < n; w++)
+			for (j = 0; j < n; j++)
 		{
-			if (w == i)
+			if (j == i)
 			_putchar('\\');
-			else if (w < i)
+			else if (j < i)
 			_putchar(' ');
 		}
 		_putchar('\n');
