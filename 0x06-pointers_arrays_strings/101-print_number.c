@@ -1,29 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * rot13 - origin function
- * @s: pointer to string parameter
- * Return: *s
+ * print_number - origin function
+ * @n: origin parameter
+ * Return: Always 0.
  */
 
-char *rot13(char *s)
+void print_number(int n)
 {
-	int w;
-	int j;
-	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	unsigned int n1;
 
-	for (w = 0; s[w] != '\0'; w++)
+	n1 = n;
+
+	if (n < 0)
 	{
-		for (j = 0; j < 52; j++)
-		{
-			if (s[w] == data1[j])
-			{
-				s[w] = datarot[j];
-				break;
-			}
-		}
+	_putchar('-');
+	n1 = -n;
 	}
-	return (s);
+
+	if (n1 / 10 != 0)
+	{
+	print_number(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
 }
